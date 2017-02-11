@@ -1,0 +1,20 @@
+---
+---
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>{{ site.name }}</h1>
+      </div>
+      <ul>
+        {% for key in site.data.keys %}
+        <li><a href="{{ key.file }}">{{ key.name }}</a> {% if key.email %}(<a href="mailto:{{ key.email }}">{{ key.email }}</a>){% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>

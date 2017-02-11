@@ -1,0 +1,7 @@
+---
+- name: Blendle Authority
+  file: authority.asc
+
+- name: Blendle Security
+  email: security@blendle.com
+  file: security.asc
